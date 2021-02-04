@@ -65,11 +65,9 @@ const Search = () => {
           showResults && 
             <div className="search-results-left">
               <img className="search-results-image" src={user?.avatar_url} alt=""/>
-              <div className="profile-button">
-                <a className="button-link" href={user?.html_url}>
-                  <Button>Ver perfil</Button>
-                </a>
-              </div>
+              <a className="results-button" href={user?.html_url}>
+                <Button>Ver perfil</Button>
+              </a>
             </div>
           )}
           {isLoading  ? (
