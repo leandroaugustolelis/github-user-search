@@ -11,7 +11,7 @@ const Routes = () => {
       <Header />
       <Switch>
         <Route path="/" exact component={() => <Home/>} />
-        <Route path="/search" exact component={() => <Search/>} />
+        <Route path="/search" component={() => <Search/>} />
       </Switch>   
     </BrowserRouter>
   );
