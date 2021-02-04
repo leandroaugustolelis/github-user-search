@@ -14,7 +14,7 @@ const Search = () => {
   const [input, setInput] = useState('');
   const [user, setUser] = useState<UserProps>();
   const [isLoading, setIsLoading] = useState(false);
-  const [hasResults, setHasResults] = useState(false);
+  const [showResults, setShowResults] = useState(false);
   const [error, setError] = useState('');
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -33,8 +33,7 @@ const Search = () => {
         setIsLoading(false);
       });
 
-      setHasResults(true);
-      
+      setShowResults(true);
       setError('')
     } catch(err) {
       setError('Repositório não existe')
@@ -58,12 +57,12 @@ const Search = () => {
           </div>
          </form>
       </div>
-      {hasResults && 
+      {showResults && 
         <div className="search-results-container"> 
           {isLoading  ? (
             <ImageLoader />
           ) : (
-          hasResults && 
+          showResults && 
             <div className="search-results-left">
               <img className="search-results-image" src={user?.avatar_url} alt=""/>
               <div className="profile-button">
@@ -76,7 +75,7 @@ const Search = () => {
           {isLoading  ? (
             <InfoLoader />
           ) : (
-          hasResults && 
+          showResults && 
             <div className="search-results-right">
               <div className="search-results-top">
                 <span className="github-box">Repositórios públicos: {user?.public_repos}</span>
