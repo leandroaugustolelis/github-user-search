@@ -46,23 +46,6 @@
   padding-bottom: 28px;
 }
 
-.github-box {
-  width: 165px;
-  height: 20px;
-  margin-right: 8px;
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #595959;
-}
-
 .search-results-right {
   display: flex;
   flex-direction: column;
@@ -93,6 +76,23 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 28px;
+}
+
+.github-box {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 8px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #595959;
 }
 
 .github-info {
@@ -133,7 +133,4 @@
   display: block;
   font-size: 13px;
   color: red;
-}
-
-.button-link {
 }

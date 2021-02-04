@@ -1,7 +1,7 @@
-import React from 'react';
-import './styles.scss'
-import { Link } from 'react-router-dom';
-import Button from '../../core/components/Button';
+import React from "react";
+import "./styles.scss";
+import { Link } from "react-router-dom";
+import Button from "../../core/components/Button";
 
 const Home = () => {
   return (
@@ -11,13 +11,15 @@ const Home = () => {
         Bootcamp DevSuperior
       </h1>
       <p className="main-text">
-        Bem-vindos ao desafio do capítulo 3 do Bootcamp DevSuperior.<br />
+        Bem-vindos ao desafio do capítulo 3 do Bootcamp DevSuperior.
         <br />
-        Favor observar as instruções passadas no capítulo sobre a elaboração <br />
+        <br />
+        Favor observar as instruções passadas no capítulo sobre a elaboração
+        <br />
         deste projeto.
         <br />
         <br />
-        Este design foi adaptado a partir de Ant Design System for Figma, 
+        Este design foi adaptado a partir de Ant Design System for Figma,
         <br />
         de Mateusz Wierzbicki: antforfigma@gmail.com
       </p>
@@ -27,8 +29,7 @@ const Home = () => {
         </Link>
       </div>
     </div>
-    
   );
-}
+};
 
 export default Home;
