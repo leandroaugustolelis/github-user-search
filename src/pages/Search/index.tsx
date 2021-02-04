@@ -61,56 +61,50 @@ const Search = () => {
           {isLoading ? (
             <ImageLoader />
           ) : (
-            showResults && (
-              <div className="search-results-left">
-                <img
-                  className="search-results-image"
-                  src={user?.avatar_url}
-                  alt=""
-                />
-                <a className="results-button" href={user?.html_url}>
-                  <Button>Ver perfil</Button>
-                </a>
-              </div>
-            )
+            <div className="search-results-left">
+              <img
+                className="search-results-image"
+                src={user?.avatar_url}
+                alt=""
+              />
+              <a className="results-button" href={user?.html_url}>
+                <Button>Ver perfil</Button>
+              </a>
+            </div>
           )}
           {isLoading ? (
             <InfoLoader />
           ) : (
-            showResults && (
-              <div className="search-results-right">
-                <div className="search-results-top">
-                  <span className="github-box">
-                    Repositórios públicos: {user?.public_repos}
-                  </span>
-                  <span className="github-box">
-                    Seguidores: {user?.followers}
-                  </span>
-                  <span className="github-box">
-                    Seguindo: {user?.following}
-                  </span>
-                </div>
-                <div className="search-results-content">
-                  <h4 className="search-results-title">Informações</h4>
-                  <span className="github-info">
-                    <strong>Empresa:</strong>
-                    {user?.company}
-                  </span>
-                  <span className="github-info">
-                    <strong>Website/Blog:</strong>
-                    {user?.blog}
-                  </span>
-                  <span className="github-info">
-                    <strong>Localidade:</strong>
-                    {user?.location}
-                  </span>
-                  <span className="github-info">
-                    <strong>Membro desde:</strong>
-                    {dayjs(user?.created_at).format("DD/MM/YYYY")}
-                  </span>
-                </div>
+            <div className="search-results-right">
+              <div className="search-results-top">
+                <span className="github-box">
+                  Repositórios públicos: {user?.public_repos}
+                </span>
+                <span className="github-box">
+                  Seguidores: {user?.followers}
+                </span>
+                <span className="github-box">Seguindo: {user?.following}</span>
               </div>
-            )
+              <div className="search-results-content">
+                <h4 className="search-results-title">Informações</h4>
+                <span className="github-info">
+                  <strong>Empresa:</strong>
+                  {user?.company}
+                </span>
+                <span className="github-info">
+                  <strong>Website/Blog:</strong>
+                  {user?.blog}
+                </span>
+                <span className="github-info">
+                  <strong>Localidade:</strong>
+                  {user?.location}
+                </span>
+                <span className="github-info">
+                  <strong>Membro desde:</strong>
+                  {dayjs(user?.created_at).format("DD/MM/YYYY")}
+                </span>
+              </div>
+            </div>
           )}
         </div>
       )}
