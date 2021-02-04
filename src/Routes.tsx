@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter , Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
+import Search from './pages/Search';
 import Header from './components/Header';
 
 const Routes = () => {
@@ -9,8 +10,9 @@ const Routes = () => {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route to="/" component={() => <Home />} />
-      </Switch>
+        <Route path="/" exact component={() => <Home/>} />
+        <Route path="/search" exact component={() => <Search/>} />
+      </Switch>   
     </BrowserRouter>
   );
 }

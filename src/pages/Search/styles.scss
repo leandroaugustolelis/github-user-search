@@ -1,0 +1,138 @@
+.search-container {
+  padding: 115px 100px 0 90px;
+}
+
+.search-content {
+  background: #e6f7ff;
+  border-radius: 16px;
+  padding-left: 100px;
+  padding-bottom: 40px;
+  padding-top: 65px;
+}
+
+.search-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.search-input {
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  height: 40px;
+  width: 675px;
+  margin-top: 12px;
+}
+
+.search-button {
+  margin-top: 25px;
+}
+
+.search-results-image {
+  height: 280px;
+  width: 280px;
+}
+
+.search-results-container {
+  margin-top: 55px;
+  display: flex;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 28px;
+}
+
+.github-box {
+  width: 165px;
+  height: 20px;
+  margin-right: 8px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #595959;
+}
+
+.search-results-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-results-top {
+  display: flex;
+  margin-left: 45px;
+}
+
+.search-results-content {
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  width: 870px;
+  height: 220px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-top: 12px;
+  padding: 8px 17px 17px 15px;
+}
+
+.search-results-title {
+  margin-bottom: 20px;
+  color: #1890ff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.github-info {
+  padding: 8px 35px 8px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #737373;
+
+  strong {
+    margin-right: 5px;
+  }
+}
+
+.button-footer {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.search-results-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-button {
+  margin-top: 18px;
+}
+
+.error-message {
+  height: 13px;
+  display: block;
+  font-size: 13px;
+  color: red;
+}
+
+.button-link {
+  text-decoration: none;
+}

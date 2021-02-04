@@ -8,7 +8,6 @@ type ButtonProps = {
 const Button = ({children}: ButtonProps) => {
   return (
     <button className="button-content">{children}</button>
-    
   );
 }
 
